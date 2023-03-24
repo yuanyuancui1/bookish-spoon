@@ -57,7 +57,7 @@ class TicTacToe:
     
 
     def computer_move(self):
-        possible_moves = [index for index, value in enumerate(value in enumerate(self.board)) if value == '-']
+        possible_moves = [index for index, value in enumerate(self.board) if value == '-']
         for player in ['O', 'X']:
             for move in possible_moves:
                 board_copy = self.board[:]
