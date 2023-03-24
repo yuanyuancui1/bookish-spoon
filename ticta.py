@@ -79,7 +79,7 @@ class TicTacToe:
         self.display_board()
         while True:
             player_move = int(input("Enter a number between 1 and 9:")) - 1
-            if self.board[player_move] != ' ':
+            if self.board[player_move] != '-':
                 print("Invalid move.")
                 continue
             self.board[player_move] = 'X'
